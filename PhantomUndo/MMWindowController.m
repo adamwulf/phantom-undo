@@ -75,12 +75,21 @@
 {
     if (commandSelector == @selector(cancelOperation:)) {
         
+        // If i move this registerUndoWithTarget: call...
         [[_textView undoManager] registerUndoWithTarget:self handler:^(id  _Nonnull target) {
             NSLog(@"--undo--");
         }];
         
         [[textView window] endEditingFor:nil];
         [_textField becomeFirstResponder];
+        
+        // to after the endEditingFor: call, then everything works fine.
+        // for some reason, adding the new undo item /after/ removing
+        // the other items works better. The other items are removed
+        // inside the [endEditingFor:] => [textDidEndEditing:] calls,
+        // so adding the registerUndoWithTarget: causes it to be run after
+        // the removeAllActionsWithTarget: calls
+        
         [self updateUndoStackCountLabel];
         [self performSelector:@selector(updateUndoStackCountLabel) withObject:nil afterDelay:.3];
         return YES;
