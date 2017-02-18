@@ -25,6 +25,8 @@
 -(void) windowDidLoad{
     [super windowDidLoad];
     
+    [[self window] setInitialFirstResponder:_textView];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidEndEditing:) name:NSTextDidEndEditingNotification object:_textView];
 }
 
@@ -32,8 +34,6 @@
     [super showWindow:sender];
     
     [self updateUndoStackCountLabel];
-    
-    [_textView becomeFirstResponder];
 }
 
 - (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window
@@ -61,6 +61,12 @@
     }
     
     return YES;
+}
+
+-(void) keyUp:(NSEvent *)event{
+    [super keyUp:event];
+    
+    [self updateUndoStackCountLabel];
 }
 
 #pragma mark - NSTextViewDelegate
