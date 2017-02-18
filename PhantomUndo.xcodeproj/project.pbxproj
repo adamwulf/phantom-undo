@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C531B53A1E57F3CF00CBB254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C531B5391E57F3CF00CBB254 /* AppDelegate.m */; };
+		C531B53D1E57F3CF00CBB254 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C531B53C1E57F3CF00CBB254 /* main.m */; };
+		C531B53F1E57F3CF00CBB254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C531B53E1E57F3CF00CBB254 /* Assets.xcassets */; };
+		C531B5421E57F3CF00CBB254 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C531B5401E57F3CF00CBB254 /* MainMenu.xib */; };
+		C531B54B1E57F80600CBB254 /* FBUndoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C531B54A1E57F80600CBB254 /* FBUndoManager.m */; };
+		C531B5521E57F93300CBB254 /* MMWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C531B5501E57F93300CBB254 /* MMWindowController.m */; };
+		C531B5531E57F93300CBB254 /* MMWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C531B5511E57F93300CBB254 /* MMWindowController.xib */; };
+		C531B5561E57FE6A00CBB254 /* NSUndoManager+FBUndoStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C531B5551E57FE6A00CBB254 /* NSUndoManager+FBUndoStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C531B5351E57F3CF00CBB254 /* PhantomUndo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhantomUndo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C531B5381E57F3CF00CBB254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C531B5391E57F3CF00CBB254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C531B53C1E57F3CF00CBB254 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C531B53E1E57F3CF00CBB254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C531B5411E57F3CF00CBB254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C531B5431E57F3CF00CBB254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C531B5491E57F80600CBB254 /* FBUndoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUndoManager.h; sourceTree = "<group>"; };
+		C531B54A1E57F80600CBB254 /* FBUndoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUndoManager.m; sourceTree = "<group>"; };
+		C531B54F1E57F93300CBB254 /* MMWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWindowController.h; sourceTree = "<group>"; };
+		C531B5501E57F93300CBB254 /* MMWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMWindowController.m; sourceTree = "<group>"; };
+		C531B5511E57F93300CBB254 /* MMWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMWindowController.xib; sourceTree = "<group>"; };
+		C531B5541E57FE6A00CBB254 /* NSUndoManager+FBUndoStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUndoManager+FBUndoStack.h"; sourceTree = "<group>"; };
+		C531B5551E57FE6A00CBB254 /* NSUndoManager+FBUndoStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUndoManager+FBUndoStack.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C531B5321E57F3CF00CBB254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C531B52C1E57F3CF00CBB254 = {
+			isa = PBXGroup;
+			children = (
+				C531B5371E57F3CF00CBB254 /* PhantomUndo */,
+				C531B5361E57F3CF00CBB254 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C531B5361E57F3CF00CBB254 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C531B5351E57F3CF00CBB254 /* PhantomUndo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C531B5371E57F3CF00CBB254 /* PhantomUndo */ = {
+			isa = PBXGroup;
+			children = (
+				C531B5491E57F80600CBB254 /* FBUndoManager.h */,
+				C531B54A1E57F80600CBB254 /* FBUndoManager.m */,
+				C531B5541E57FE6A00CBB254 /* NSUndoManager+FBUndoStack.h */,
+				C531B5551E57FE6A00CBB254 /* NSUndoManager+FBUndoStack.m */,
+				C531B5381E57F3CF00CBB254 /* AppDelegate.h */,
+				C531B5391E57F3CF00CBB254 /* AppDelegate.m */,
+				C531B54F1E57F93300CBB254 /* MMWindowController.h */,
+				C531B5501E57F93300CBB254 /* MMWindowController.m */,
+				C531B5511E57F93300CBB254 /* MMWindowController.xib */,
+				C531B53E1E57F3CF00CBB254 /* Assets.xcassets */,
+				C531B5401E57F3CF00CBB254 /* MainMenu.xib */,
+				C531B5431E57F3CF00CBB254 /* Info.plist */,
+				C531B53B1E57F3CF00CBB254 /* Supporting Files */,
+			);
+			path = PhantomUndo;
+			sourceTree = "<group>";
+		};
+		C531B53B1E57F3CF00CBB254 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C531B53C1E57F3CF00CBB254 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C531B5341E57F3CF00CBB254 /* PhantomUndo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C531B5461E57F3CF00CBB254 /* Build configuration list for PBXNativeTarget "PhantomUndo" */;
+			buildPhases = (
+				C531B5311E57F3CF00CBB254 /* Sources */,
+				C531B5321E57F3CF00CBB254 /* Frameworks */,
+				C531B5331E57F3CF00CBB254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhantomUndo;
+			productName = sadfsadf;
+			productReference = C531B5351E57F3CF00CBB254 /* PhantomUndo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C531B52D1E57F3CF00CBB254 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Flexibits Inc.";
+				TargetAttributes = {
+					C531B5341E57F3CF00CBB254 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MU27A4SCKC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C531B5301E57F3CF00CBB254 /* Build configuration list for PBXProject "PhantomUndo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C531B52C1E57F3CF00CBB254;
+			productRefGroup = C531B5361E57F3CF00CBB254 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C531B5341E57F3CF00CBB254 /* PhantomUndo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C531B5331E57F3CF00CBB254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C531B5531E57F93300CBB254 /* MMWindowController.xib in Resources */,
+				C531B53F1E57F3CF00CBB254 /* Assets.xcassets in Resources */,
+				C531B5421E57F3CF00CBB254 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C531B5311E57F3CF00CBB254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C531B5561E57FE6A00CBB254 /* NSUndoManager+FBUndoStack.m in Sources */,
+				C531B53D1E57F3CF00CBB254 /* main.m in Sources */,
+				C531B5521E57F93300CBB254 /* MMWindowController.m in Sources */,
+				C531B54B1E57F80600CBB254 /* FBUndoManager.m in Sources */,
+				C531B53A1E57F3CF00CBB254 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C531B5401E57F3CF00CBB254 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C531B5411E57F3CF00CBB254 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C531B5441E57F3CF00CBB254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C531B5451E57F3CF00CBB254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C531B5471E57F3CF00CBB254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MU27A4SCKC;
+				INFOPLIST_FILE = PhantomUndo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.milestonemade.phantomundo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C531B5481E57F3CF00CBB254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MU27A4SCKC;
+				INFOPLIST_FILE = PhantomUndo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.milestonemade.phantomundo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C531B5301E57F3CF00CBB254 /* Build configuration list for PBXProject "PhantomUndo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C531B5441E57F3CF00CBB254 /* Debug */,
+				C531B5451E57F3CF00CBB254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C531B5461E57F3CF00CBB254 /* Build configuration list for PBXNativeTarget "PhantomUndo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C531B5471E57F3CF00CBB254 /* Debug */,
+				C531B5481E57F3CF00CBB254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C531B52D1E57F3CF00CBB254 /* Project object */;
+}
